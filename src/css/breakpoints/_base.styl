@@ -3,12 +3,13 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
-h1{
-  color: #333
-  transform: translateX(-50px)
-}
+
 body {
+  margin: 0
   font-family: "Kameron", "Noto Sans JP", sans-serif
+}
+p{
+  margin: 0
 }
 img {
   max-width: 100%
@@ -57,13 +58,55 @@ img {
   display: flex
   flex-direction: column
 }
+/******************************************************************
 
+カバー部分
+
+******************************************************************/
+#cover{
+  }
+.cover{
+  z-index: 99
+  position: relative
+  height: 100vh
+  scroll-snap-type: mandatory
+  scroll-snap-points-y: repeat(300px)
+  scroll-snap-type: y mandatory
+  overflow: auto;
+
+  &-content{
+    width: 100%
+    height: 100vh
+    scroll-snap-align: center;
+    }
+  &__myname{
+    background-color: rgba(0,0,0,0.1)
+
+    }
+  &__work{
+    background-color: rgba(0,0,0,0.5)
+      }
+
+  }
+/******************************************************************
+
+メイン部分
+
+******************************************************************/
 #main-content {
-  position: relative
-  z-index: 0
-}
+  position: fixed
+  top: 0
+  width: 100%
+  max-height: 100vh
+  background-color: #333
 
-main {
-  position: relative
-  z-index: -1
+  .myprofile{
+    width: 100%
+    height: 100%
+
+    &__img{
+      height: 100%
+      width:100%
+      }
+    }
 }
