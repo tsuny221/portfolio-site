@@ -5,14 +5,39 @@ html(lang="ja")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Document
     link(rel="stylesheet", href="css/style.css")
+    link(rel="stylesheet" href="https://use.typekit.net/mar0rtq.css")
   body
     #cover.cover
       .cover__myname.cover-content#cover-content
-        p MISA TSUNEMATSU
-      .cover__work.cover-content
-      .cover-content
-      .cover-content
-    #main-content
-      .myprofile
-        img(src="images/usagi.jpg", alt="背景" class="myprofile__img" id="main__img")
+        .cover-content__box
+          h1
+            | MISA TSUNEMATSU
+            br
+            | PORTFOLIO
+      a(href="index.html")
+        .cover__work1.cover-content
+          .cover-content__box
+            h1.font-lg Work
+            p.font-lr portfolio site
+      a(href="kiritori.html")
+        .cover__work2.cover-content
+          .cover-content__box
+            h1.font-lg Work
+            p.font-lr original blog
+            p.font-lr 「kiritori」
+      a(href="childrenraku.html")
+        .cover__work3.cover-content
+          .cover-content__box
+            h1.font-lg Work
+            p.font-lr application
+            p.font-lr 「ちるどれんらく」
+      .cover__work4.cover-content
+        .cover-content__box
+          h1.cover__work4__title
+            | THANK YOU FOR WATCHING
+            br
+            | PORTFOLIO
+    #main.main
+       .main__content
+        img(src="images/usagi.jpg", alt="背景" class="main__img" id="main__img")
     script(type="text/javascript" src="js/main.js")

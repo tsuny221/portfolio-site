@@ -5,17 +5,20 @@ scroll.onscroll = function () {
   var scrollHeight = scroll.scrollTop;
   var itemHeight = document.getElementById("cover-content").clientHeight;
   var img = document.getElementById("main__img");
-   if( scrollHeight < itemHeight)
-   {
+   if( scrollHeight < itemHeight){
+     img.animate([{ opacity: '0' }, { opacity: '1' }], 300);
      img.src = "images/bin.jpg";
-     img.animate([{opacity: '0'}, {opacity: '1'}], 100)
-
-   } else if( scrollHeight < itemHeight*2){
-     img.src = "images/usagi.jpg";
-     img.animate([{opacity: '0'}, {opacity: '1'}], 100)
-
+   } else if (scrollHeight < itemHeight * 2) {
+     img.animate([{ opacity: '0' }, { opacity: '1' }], 300);
+     img.src = "images/kiritori.jpg";
    } else if (scrollHeight < itemHeight * 3) {
-     img.src = "images/bin.jpg";
-     img.animate([{opacity: '0'}, {opacity: '1'}], 100)
-    }
+     img.animate([{ opacity: '0' }, { opacity: '1' }], 300);
+     img.src = "images/kiritori.jpg";
+   } else if (scrollHeight < itemHeight * 4) {
+     img.animate([{ opacity: '0' }, { opacity: '1' }], 300);
+     img.src = "images/childrenraku.jpg";
+   } else if (scrollHeight < itemHeight * 5) {
+     img.animate([{ opacity: '0' }, { opacity: '1' }], 300);
+     img.src = "images/usagi.jpg";
+  }
 };
