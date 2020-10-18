@@ -80,18 +80,23 @@ img {
   width: 100%;
   height: 100vh;
   scroll-snap-align: center;
+  background: transparent;
 }
 .cover-content__box {
-  padding-top: 10%;
+  padding-top: 3%;
   margin-left: 1%;
 }
 .cover__myname {
-  background-color: rgba(230,230,250,0.3);
   position: relative;
 }
 .cover__work1 {
   position: relative;
-  background-color: rgba(221,160,221,0.1);
+}
+.cover__work2 {
+  position: relative;
+}
+.cover__work3 {
+  position: relative;
 }
 .main {
   position: fixed;
@@ -99,7 +104,7 @@ img {
   width: 100%;
   margin: 0 auto;
   height: 100vh;
-  background-image: url("../images/back.jpg");
+  background-image: url("../images/back2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -111,7 +116,7 @@ img {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 90%;
   height: 100vh;
 }
 .main__img {
@@ -119,6 +124,8 @@ img {
   height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 @media (min-width: 600px) {
   .flex {
