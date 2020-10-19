@@ -98,6 +98,23 @@ img {
 .cover__work3 {
   position: relative;
 }
+.arrow__img {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 10px;
+  height: 100px;
+  -webkit-animation: arrow 1.5s 0s infinite;
+  animation: arrow 1.5s 0s infinite;
+}
+.arrow__text {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 65px;
+  left: 51%;
+}
 .main {
   position: fixed;
   top: 0;
@@ -126,6 +143,26 @@ img {
   object-fit: contain;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+@-webkit-keyframes arrow {
+  0%, 100% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+@keyframes arrow {
+  0%, 100% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
 }
 @media (min-width: 600px) {
   .flex {

@@ -108,6 +108,30 @@ img {
     position: relative
     }
   }
+  .arrow__img{
+    position: absolute
+    bottom: 30px
+    left: 50%
+    width: 10px
+    height: 100px
+    animation arrow 1.5s 0s infinite
+  }
+  .arrow__text{
+    transform: rotate(90deg)
+    position: absolute
+    bottom: 65px
+    left: 51%
+    }
+
+    @keyframes arrow{
+
+      0%, 100%{
+        transform: translateY(10px)
+        }
+      50%{
+        transform:translateY(0px)
+        }
+      }
 /******************************************************************
 
 メイン部分
