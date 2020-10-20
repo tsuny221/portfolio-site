@@ -26,7 +26,7 @@ img {
   font-size: 17px;
 }
 .font-lr {
-  font-size: 17px;
+  font-size: 20px;
 }
 .font-lg,
 .main-title {
@@ -82,9 +82,15 @@ img {
   scroll-snap-align: center;
   background: transparent;
 }
-.cover-content__box {
+.cover-content__head {
   padding-top: 3%;
   margin-left: 1%;
+}
+.cover-content__detail {
+  max-width: 50%;
+  position: absolute;
+  right: 1%;
+  bottom: 3%;
 }
 .cover__myname {
   position: relative;
